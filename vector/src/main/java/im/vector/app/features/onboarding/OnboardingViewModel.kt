@@ -813,8 +813,8 @@ class OnboardingViewModel @AssistedInject constructor(
     }
 
     /**
-     * If user has entered https://matrix.org, ensure that server type is ServerType.MatrixOrg.
-     * It is also useful to set the value again in the case of a certificate error on matrix.org.
+     * If user has entered https://edu97.ir, ensure that server type is ServerType.MatrixOrg.
+     * It is also useful to set the value again in the case of a certificate error on edu97.ir.
      **/
     private fun OnboardingViewState.alignServerTypeAfterSubmission(config: HomeServerConnectionConfig, serverTypeOverride: ServerType?): ServerType {
         return if (config.homeServerUri.toString() == matrixOrgUrl) {
